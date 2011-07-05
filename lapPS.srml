@@ -1,0 +1,79 @@
+<!DOCTYPE Simulation SYSTEM 'srml.dtd'>
+<Simulation Name='Test' Type='Laparoscopy' UseHaptic='0' Verbose='1' RenderRate='0.020' SimulationRate='0.01' HapticRate='0.001' Gravity='0.0 -9.81 0.0' Debug='1'>
+  <Haptic Name='IHP' Type='vtkIHP' NumberOfTools='2'>
+  </Haptic>
+  <Scenario Name='TestScenario'>
+    <Environment Name='DefaultEnvironment' Ambient='0.0 0.0 0.0' Background='0.0 0.0 0.0'>
+      <Cameras Name='CameraCollection'>
+        <Camera Id='0' Name='Camera' Position='0.0 0.0 2' FocalPoint='0.0 0.0 -6.0' Orientation='0.0 0.0 0.0' ViewAngle='60' ParallelProjection='0' Yaw='0' Elevation='20' Pitch='-15' Dolly='1'>
+        </Camera>
+      </Cameras>
+      <Lights Name='LightCollection'>
+        <Light Id='0' Name='Environment' LightType='Scene' Positional='0' Intensity='0.5' AmbientColor='0.0 0.0 0.0' DiffuseColor='1.0 1.0 1.0' SpecularColor='1.0 1.0 1.0' ConeAngle='60'>
+        </Light>
+        <Light Id='1' Name='FlashLight' LightType='Head' Positional='1' Intensity='0.7' AmbientColor='0 0.1 0.1' DiffuseColor='1.0 1.0 1.0' SpecularColor='1.0 1.0 1.0' ConeAngle='40'>
+        </Light>
+      </Lights>
+    </Environment>
+    <Items Name='Default'>
+      <Tools Name='ToolCollection'>
+        <Tool Id='0' Status='Visible' Type='Grasper' Name='LeftGrasper' NumberOfPieces='3' Scale='1' Position='-3.0 0.0 0.0' Origin='0.0 0.0 4.0' Orientation='0.0 -10.0 0.0' Debug='0'>
+          <Piece Id='0' Name='Stick' Type='Stick' FileName='Scenario/Tools/Grasper/Stick.vtp' />
+          <Piece Id='1' Name='LeftGrasper' Type='Grasper' FileName='Scenario/Tools/Grasper/LeftGrasper.vtp' />
+          <Piece Id='2' Name='RightGrasper' Type='Grasper' FileName='Scenario/Tools/Grasper/RightGrasper.vtp' />
+        </Tool>
+        <Tool Id='1' Status='Visible' Type='Grasper' Name='RightGrasper' NumberOfPieces='3' Scale='1' Position='3.0 0.0 0.0' Origin='0.0 0.0 4.0' Orientation='0.0 10.0 0.0' Debug='0'>
+          <Piece Id='0' Name='Stick' Type='Stick' FileName='Scenario/Tools/Grasper/Stick.vtp' />
+          <Piece Id='1' Name='LeftGrasper' Type='Grasper' FileName='Scenario/Tools/Grasper/LeftGrasper.vtp' />
+          <Piece Id='2' Name='RightGrasper' Type='Grasper' FileName='Scenario/Tools/Grasper/RightGrasper.vtp' />
+        </Tool>
+      </Tools>
+      <Organs Name='OrganCollection'>
+        <Organ Id='0' Status='Visible' Name='Stomach' Type='Deformable' FileName='Scenario/Organs/stomach.vtp' TextureFile='Scenario/Textures/stomachtexture.jpg' ContainsFluid='0' Position='0.0 0.0 0.0' Origin='0.0 0.0 0.0' Orientation='0.0 0.0 0.0' Debug='0'>
+          <DeformationModel Name='ParticleSpring' FileName='Scenario/Organs/stomach.vtp' Solver='RK4' SpringCoefficient='100' DistanceCoefficient='20' DampingCoefficient='5.0' Mass='1' RigidityFactor='2' EnableGravity='0'>
+            <BCs>
+              <BC Type='Neumann' PointId='0' Value='0'/>
+              <BC Type='Neumann' PointId='1' Value='0'/>
+              <BC Type='Neumann' PointId='2' Value='0'/>
+              <BC Type='Neumann' PointId='3' Value='0'/>
+              <BC Type='Neumann' PointId='4' Value='0'/>
+              <BC Type='Neumann' PointId='5' Value='0'/>
+              <BC Type='Neumann' PointId='6' Value='0'/>
+              <BC Type='Neumann' PointId='7' Value='0'/>
+              <BC Type='Neumann' PointId='8' Value='0'/>
+              <BC Type='Neumann' PointId='9' Value='0'/>
+              <BC Type='Neumann' PointId='10' Value='0'/>
+              <BC Type='Neumann' PointId='11' Value='0'/>
+              <BC Type='Neumann' PointId='12' Value='0'/>
+              <BC Type='Neumann' PointId='13' Value='0'/>
+              <BC Type='Neumann' PointId='14' Value='0'/>
+              <BC Type='Neumann' PointId='15' Value='0'/>
+              <BC Type='Neumann' PointId='224' Value='0'/>
+              <BC Type='Neumann' PointId='225' Value='0'/>
+              <BC Type='Neumann' PointId='226' Value='0'/>
+              <BC Type='Neumann' PointId='227' Value='0'/>
+              <BC Type='Neumann' PointId='228' Value='0'/>
+              <BC Type='Neumann' PointId='229' Value='0'/>
+              <BC Type='Neumann' PointId='230' Value='0'/>
+              <BC Type='Neumann' PointId='231' Value='0'/>
+              <BC Type='Neumann' PointId='232' Value='0'/>
+              <BC Type='Neumann' PointId='233' Value='0'/>
+              <BC Type='Neumann' PointId='234' Value='0'/>
+              <BC Type='Neumann' PointId='235' Value='0'/>
+              <BC Type='Neumann' PointId='236' Value='0'/>
+              <BC Type='Neumann' PointId='237' Value='0'/>
+              <BC Type='Neumann' PointId='238' Value='0'/>
+              <BC Type='Neumann' PointId='239' Value='0'/>
+            </BCs>
+          </DeformationModel>
+        </Organ>
+      </Organs>
+      <Extras Name='ExtraCollection'>
+        <Extra Id='0' Name='Legend' Type='Legend' Background='0.0 0.0 0.0'>
+          <Organs Value='1'></Organs>
+          <Tools Value='1'></Tools>
+        </Extra>
+      </Extras>
+    </Items>
+  </Scenario>
+</Simulation>

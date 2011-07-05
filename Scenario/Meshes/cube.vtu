@@ -1,0 +1,43 @@
+<VTKFile type="UnstructuredGrid" version="0.1" byte_order="LittleEndian">
+  <UnstructuredGrid>
+    <Piece NumberOfPoints="8" NumberOfCells="6">
+      <PointData Normals="Normals" TCoords="TCoords">
+        <DataArray type="Float32" Name="Normals" NumberOfComponents="3" format="ascii" RangeMin="1" RangeMax="1">
+          -1 0 0 -1 0 0
+          -1 0 0 -1 0 0
+          1 0 0 1 0 0
+          1 0 0 1 0 0
+        </DataArray>
+        <DataArray type="Float32" Name="TCoords" NumberOfComponents="2" format="ascii" RangeMin="0" RangeMax="1.4142135624">
+          0 0 1 0 1 1
+          0 1 -0 0 -0 1
+          -1 1 -1 0
+        </DataArray>
+      </PointData>
+      <CellData>
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="ascii" RangeMin="0.86602540378" RangeMax="0.86602540378">
+          -0.5 -0.5 -0.5 -0.5 -0.5 0.5
+          -0.5 0.5 0.5 -0.5 0.5 -0.5
+          0.5 -0.5 -0.5 0.5 0.5 -0.5
+          0.5 0.5 0.5 0.5 -0.5 0.5
+        </DataArray>
+      </Points>
+      <Cells>
+        <DataArray type="Int32" Name="connectivity" format="ascii" RangeMin="0" RangeMax="7">
+          3 2 0 4 2 1
+          0 4 4 3 2 5
+          4 5 2 6 4 2
+          1 6 4 6 1 7
+        </DataArray>
+        <DataArray type="Int32" Name="offsets" format="ascii" RangeMin="4" RangeMax="24">
+          4 8 12 16 20 24
+        </DataArray>
+        <DataArray type="UInt8" Name="types" format="ascii" RangeMin="10" RangeMax="10">
+          10 10 10 10 10 10
+        </DataArray>
+      </Cells>
+    </Piece>
+  </UnstructuredGrid>
+</VTKFile>

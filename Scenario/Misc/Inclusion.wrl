@@ -1,0 +1,79 @@
+#VRML V2.0 utf8
+
+# This file is converted using vrml1to2 version 1.6
+# This converter is based on Final VRML2.0 - August 4, 1996.
+# This converter is provided by Sony.
+
+DEF Cuerpo_Inclusion Transform {
+	children [
+		Transform {
+			translation -5.00006 -5.00003 -3
+			children [
+				Transform {
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									ambientIntensity 1
+									diffuseColor 1 1 1
+								}
+							}
+							geometry IndexedFaceSet {
+								coord Coordinate {
+									point [
+										-7.50009 -7.50005 4.5,
+										7.50009 -7.50005 4.5,
+										7.50009 7.50005 4.5,
+										-7.50009 7.50005 4.5,
+										7.50009 -7.50005 -4.5,
+										7.50009 7.50005 -4.5,
+										-7.50009 -7.50005 -4.5,
+										-7.50009 7.50005 -4.5
+									]
+								}
+								coordIndex [
+									0, 1, 2, 3, -1,
+									1, 4, 5, 2, -1,
+									4, 6, 7, 5, -1,
+									6, 0, 3, 7, -1,
+									2, 5, 7, 3, -1,
+									0, 6, 4, 1, -1
+								]
+								color Color {
+									color [
+										1 1 1,
+										1 1 1,
+										1 1 1,
+										1 1 1,
+										1 1 1,
+										1 1 1
+									]
+								}
+								colorIndex [
+									0, 1, 2, 3, 
+									4, 5
+								]
+								colorPerVertex FALSE
+								normal Normal {
+									vector [
+										0 0 1,
+										1 0 0,
+										0 0 -1,
+										-1 0 0,
+										0 1 0,
+										0 -1 0
+									]
+								}
+								normalIndex [
+									0, 1, 2, 3, 
+									4, 5
+								]
+								solid           FALSE
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

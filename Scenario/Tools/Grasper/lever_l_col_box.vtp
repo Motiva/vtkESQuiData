@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<VTKFile type="PolyData" version="0.1" byte_order="LittleEndian" compressor="vtkZLibDataCompressor">
+  <PolyData>
+    <Piece NumberOfPoints="24" NumberOfVerts="0" NumberOfLines="0" NumberOfStrips="0" NumberOfPolys="6">
+      <PointData>
+      </PointData>
+      <CellData>
+      </CellData>
+      <Points>
+        <DataArray type="Float32" Name="Points" NumberOfComponents="3" format="ascii" RangeMin="0.36336072493" RangeMax="2.7171463266">
+          0.2875199914 0.22968000174 -2.6897699833 0.2875199914 0.22968000174 -0.0165989995
+          0.2875199914 -0.25564399362 -0.0165989995 0.2875199914 -0.25564399362 -2.6897699833
+          -0.28107398748 0.22968000174 -0.0165989995 -0.28107398748 0.22968000174 -2.6897699833
+          -0.28107398748 -0.25564399362 -2.6897699833 -0.28107398748 -0.25564399362 -0.0165989995
+          -0.28107398748 0.22968000174 -2.6897699833 -0.28107398748 0.22968000174 -0.0165989995
+          0.2875199914 0.22968000174 -0.0165989995 0.2875199914 0.22968000174 -2.6897699833
+          0.2875199914 -0.25564399362 -2.6897699833 0.2875199914 -0.25564399362 -0.0165989995
+          -0.28107398748 -0.25564399362 -0.0165989995 -0.28107398748 -0.25564399362 -2.6897699833
+          0.2875199914 -0.25564399362 -0.0165989995 0.2875199914 0.22968000174 -0.0165989995
+          -0.28107398748 0.22968000174 -0.0165989995 -0.28107398748 -0.25564399362 -0.0165989995
+          0.2875199914 0.22968000174 -2.6897699833 0.2875199914 -0.25564399362 -2.6897699833
+          -0.28107398748 -0.25564399362 -2.6897699833 -0.28107398748 0.22968000174 -2.6897699833
+        </DataArray>
+      </Points>
+      <Verts>
+        <DataArray type="Int32" Name="connectivity" format="ascii" RangeMin="1e+299" RangeMax="-1e+299">
+        </DataArray>
+        <DataArray type="Int32" Name="offsets" format="ascii" RangeMin="1e+299" RangeMax="-1e+299">
+        </DataArray>
+      </Verts>
+      <Lines>
+        <DataArray type="Int32" Name="connectivity" format="ascii" RangeMin="1e+299" RangeMax="-1e+299">
+        </DataArray>
+        <DataArray type="Int32" Name="offsets" format="ascii" RangeMin="1e+299" RangeMax="-1e+299">
+        </DataArray>
+      </Lines>
+      <Strips>
+        <DataArray type="Int32" Name="connectivity" format="ascii" RangeMin="1e+299" RangeMax="-1e+299">
+        </DataArray>
+        <DataArray type="Int32" Name="offsets" format="ascii" RangeMin="1e+299" RangeMax="-1e+299">
+        </DataArray>
+      </Strips>
+      <Polys>
+        <DataArray type="Int32" Name="connectivity" format="ascii" RangeMin="0" RangeMax="23">
+          0 1 2 3 4 5
+          6 7 8 9 10 11
+          12 13 14 15 16 17
+          18 19 20 21 22 23
+        </DataArray>
+        <DataArray type="Int32" Name="offsets" format="ascii" RangeMin="4" RangeMax="24">
+          4 8 12 16 20 24
+        </DataArray>
+      </Polys>
+    </Piece>
+  </PolyData>
+</VTKFile>
