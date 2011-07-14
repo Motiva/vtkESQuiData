@@ -30,13 +30,13 @@
       </Tools>
       <Organs Name='OrganCollection'>
         <Organ Id='0' Name='Sphere' Status='Visible' Type='Deformable' FileName='Scenario/Organs/ball.vtp' TextureFile='Scenario/Textures/livertexture.jpg' ContainsFluid='0' Position='0.0 0.0 -3.0' Origin='0.0 0.0 -3.0' Orientation='0.0 0.0 0.0' Debug='0'>
-          <DeformationModel Name='ParticleSpring' FileName='Scenario/Organs/ball.vtp' Solver='RK4' SpringCoefficient='100' DistanceCoefficient='20' DampingCoefficient='5.0' Mass='1' RigidityFactor='2' EnableGravity='0'>
+          <DeformationModel Name='ParticleSpring' FileName='Scenario/Organs/ball_def_c10.vtp' Solver='RK4' SpringCoefficient='100' DistanceCoefficient='20' DampingCoefficient='5.0' Mass='1' RigidityFactor='2' EnableGravity='0'>
             <BCs>
 	    </BCs>
           </DeformationModel>
         </Organ>
         <Organ Id='1' Status='Visible' Name='Stomach' Type='Static' FileName='Scenario/Organs/stomach.vtp' TextureFile='Scenario/Textures/stomachtexture.jpg' ContainsFluid='0' Position='0.0 0.0 0.0' Origin='0.0 0.0 0.0' Orientation='0.0 0.0 0.0' Debug='0'>
-          <DeformationModel Name='ParticleSpring' FileName='Scenario/Organs/stomach.vtp' Solver='RK4' SpringCoefficient='100' DistanceCoefficient='20' DampingCoefficient='5.0' Mass='1' RigidityFactor='2' EnableGravity='0'>
+          <DeformationModel Name='ParticleSpring' FileName='Scenario/Organs/stomach_def_c8.vtp' Solver='RK4' SpringCoefficient='100' DistanceCoefficient='20' DampingCoefficient='5.0' Mass='1' RigidityFactor='2' EnableGravity='0'>
             <BCs>
               <BC Type='Neumann' PointId='0' Value='0'/>
               <BC Type='Neumann' PointId='1' Value='0'/>

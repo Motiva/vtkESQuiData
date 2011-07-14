@@ -26,7 +26,7 @@
 	      </Model>
 	      <Model Type='Collision' Status='Visible' Id='1' Name='cavity_col' FileName='Scenario/Organs/cavity_col.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 0.0' Orientation='0.0 0.0 0.0' Position='0.0 0.0 0.0' Color='1.0 1.0 1.0' Opacity='0.0' Visibility='0'>
 	      </Model>
-	      <Model Type='Deformation' Status='Visible' Id='2' Name='cavity_def' FileName='Scenario/Organs/cavity.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 0.0' Orientation='0.0 0.0 0.0' Position='0.0 0.0 0.0' Color='1.0 1.0 1.0' Opacity='0.0' Visibility='0'>
+	      <Model Type='Deformation' Status='Visible' Id='2' Name='cavity_def' FileName='Scenario/Organs/cavity_def_c8.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 0.0' Orientation='0.0 0.0 0.0' Position='0.0 0.0 0.0' Color='1.0 1.0 1.0' Opacity='0.0' Visibility='0'>
 	      <Interface Type='PSS' DeltaT='0.01' Gravity='0.0 0.0 0.0' Spring='100' Damping='5' Distance='20' Mass='1' Rigidity='2' Solver='RK4'>
 	      </Interface>
 	      </Model>
