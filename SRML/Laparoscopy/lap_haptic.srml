@@ -1,5 +1,5 @@
 <!DOCTYPE Simulation SYSTEM 'srml.dtd'>
-<Simulation Name='lap_basic' Type='Laparoscopy' UseHaptic='1' RenderRate='0.02' SimulationRate='0.01' HapticRate='0.001' Gravity='0.0 -9.81 0.0'>
+<Simulation Name='lap_basic' Type='Laparoscopy' UseHaptic='1' RenderRate='0.02' SimulationRate='0.01' HapticRate='0.001' Gravity='0.0 -9.81 0.0' DataPath=''>
 <Haptic Name='IHP' Type='vtkIHP' NumberOfTools='2'>
 </Haptic>
 <Collision>
@@ -36,52 +36,52 @@
 		</Object>
 		<Object Type='Tool' Status='Visible' Id='1' Name='probe_l' Class='Laparoscopy' Model='Probe'>
 			<Elements>
-				<Element Type='Tool' Status='Visible' Id='0' Name='probe_l_stick'>
+				<Element Type='Tool' Status='Visible' Id='0' Name='probe_l_stick' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='-2.0 1.0 0.0'>
 					<Models>
-						<Model Type='Visualization' Status='Visible' Id='0' Name='probe_l_stick_vis' FileName='Scenario/Tools/Probe/stick.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='-2.0 1.0 0.0' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
+						<Model Type='Visualization' Status='Visible' Id='0' Name='probe_l_stick_vis' FileName='Scenario/Tools/Probe/stick.vtp' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
 						</Model>
-						<Model Type='Collision' Status='Visible' Id='1' Name='probe_l_stick_col' FileName='Scenario/Tools/Probe/stick_col.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='-2.0 1.0 0.0' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1'>
+						<Model Type='Collision' Status='Visible' Id='1' Name='probe_l_stick_col' FileName='Scenario/Tools/Probe/stick_col.vtp' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1'>
 						</Model>
 					</Models>
 				</Element>
-				<Element Type='Tool' Status='Visible' Id='0' Name='probe_l_tip'>
+				<Element Type='Tool' Status='Visible' Id='0' Name='probe_l_tip' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='-2.0 1.0 0.0' Color='1.0 1.0 1.0'>
 					<Models>
-						<Model Type='Visualization' Status='Visible' Id='0' Name='probe_l_tip_vis' FileName='Scenario/Tools/Probe/tip.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='-2.0 1.0 0.0' Color='0.0 1.0 0.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
+						<Model Type='Visualization' Status='Visible' Id='0' Name='probe_l_tip_vis' FileName='Scenario/Tools/Probe/tip.vtp' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
 						</Model>
-						<Model Type='Collision' Status='Visible' Id='1' Name='probe_l_tip_col' FileName='Scenario/Tools/Probe/tip_col.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='-2.0 1.0 0.0' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1'>
-						</Model>
-					</Models>
-				</Element>
-			</Elements>
-		</Object>
-		<Object Type='Tool' Status='Visible' Id='2' Name='grasper_r' Class='Laparoscopy' Model='Grasper'>
-			<Elements>
-				<Element Type='Tool' Status='Visible' Id='0' Name='grasper_r_stick'>
-					<Models>
-						<Model Type='Visualization' Status='Visible' Id='0' Name='grasper_r_stick_vis' FileName='Scenario/Tools/Grasper/stick.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 1.0 0.0' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
-						</Model>
-						<Model Type='Collision' Status='Visible' Id='1' Name='grasper_r_stick_col' FileName='Scenario/Tools/Grasper/stick_col.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 1.0 0.0' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1'>
-						</Model>
-					</Models>
-				</Element>
-				<Element Type='Tool' Status='Visible' Id='1' Name='grasper_r_lever_l'>
-					<Models>
-						<Model Type='Visualization' Status='Visible' Id='0' Name='grasper_r_lever_l_vis' FileName='Scenario/Tools/Grasper/lever_l.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 1.0 0.0' Color='1.0 1.0 0.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
-						</Model>
-						<Model Type='Collision' Status='Visible' Id='1' Name='grasper_r_lever_l_col' FileName='Scenario/Tools/Grasper/lever_l_col.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 1.0 0.0' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1'>
-						</Model>
-					</Models>
-				</Element>
-				<Element Type='Tool' Status='Visible' Id='2' Name='grasper_r_lever_r'>
-					<Models>
-						<Model Type='Visualization' Status='Visible' Id='0' Name='grasper_r_lever_r_vis' FileName='Scenario/Tools/Grasper/lever_r.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 1.0 0.0' Color='1.0 1.0 0.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
-						</Model>
-						<Model Type='Collision' Status='Visible' Id='1' Name='grasper_r_lever_r_col' FileName='Scenario/Tools/Grasper/lever_r_col.vtp' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 1.0 0.0' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1'>
+						<Model Type='Collision' Status='Visible' Id='1' Name='probe_l_tip_col' FileName='Scenario/Tools/Probe/tip_col.vtp' Opacity='1.0' Visibility='1'>
 						</Model>
 					</Models>
 				</Element>
 			</Elements>
 		</Object>
+		<Object Type='Tool' Status='Visible' Id='0' Name='grasper_r' Class='Laparoscopy' Model='Grasper'>
+        <Elements>
+	  <Element Type='Tool' Status='Visible' Id='0' Name='grasper_r_stick' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 0.0 0.0'>
+	    <Models>
+	      <Model Type='Visualization' Status='Visible' Id='0' Name='grasper_r_stick_vis' FileName='Scenario/Tools/Grasper/stick.vtp' Color='1.0 1.0 1.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
+	      </Model>
+	      <Model Type='Collision' Status='Visible' Id='1' Name='grasper_r_stick_col' FileName='Scenario/Tools/Grasper/stick_col.vtp' Color='1.0 1.0 1.0' Opacity='0.0' Visibility='0'>
+	      </Model>
+	    </Models>
+	  </Element>
+	  <Element Type='Tool' Status='Visible' Id='0' Name='grasper_r_lever_l' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 0.0 0.0'>
+	    <Models>
+	      <Model Type='Visualization' Status='Visible' Id='0' Name='grasper_r_lever_l_vis' FileName='Scenario/Tools/Grasper/lever_l.vtp' Color='1.0 0.0 0.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
+	      </Model>
+	      <Model Type='Collision' Status='Visible' Id='1' Name='probe_l_lever_l_col' FileName='Scenario/Tools/Grasper/lever_l_col.vtp' Color='1.0 1.0 1.0' Opacity='0.0' Visibility='0'>
+	      </Model>
+	    </Models>
+	  </Element>
+		<Element Type='Tool' Status='Visible' Id='0' Name='grasper_r_lever_r' Scale='1.0 1.0 1.0' Origin='0.0 0.0 5.0' Orientation='0.0 0.0 0.0' Position='2.0 0.0 0.0'>
+	    <Models>
+	      <Model Type='Visualization' Status='Visible' Id='0' Name='grasper_r_lever_r_vis' FileName='Scenario/Tools/Grasper/lever_r.vtp' Color='1.0 0.0 0.0' Opacity='1.0' Visibility='1' TextureFileName='Scenario/Textures/metal.jpg'>
+	      </Model>
+	      <Model Type='Collision' Status='Visible' Id='1' Name='grasper_r_lever_r_col' FileName='Scenario/Tools/Grasper/lever_r_col.vtp' Color='1.0 1.0 1.0' Opacity='0.0' Visibility='0'>
+	      </Model>
+	    </Models>
+	  </Element>
+</Elements>
+      </Object>
 	</Objects>
 </Scenario>
 </Simulation>

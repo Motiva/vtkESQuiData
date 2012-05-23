@@ -1,4 +1,5 @@
-<VTKFile type="PolyData" version="0.1" byte_order="LittleEndian">
+<?xml version="1.0"?>
+<VTKFile type="PolyData" version="0.1" byte_order="LittleEndian" compressor="vtkZLibDataCompressor">
   <PolyData>
     <Piece NumberOfPoints="1011" NumberOfVerts="0" NumberOfLines="0" NumberOfStrips="381" NumberOfPolys="0">
       <PointData Normals="Normals">

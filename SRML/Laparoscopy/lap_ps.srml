@@ -1,5 +1,5 @@
 <!DOCTYPE Simulation SYSTEM 'srml.dtd'>
-<Simulation Name='Test' Type='Laparoscopy' UseHaptic='0' Verbose='1' RenderRate='0.020' SimulationRate='0.01' HapticRate='0.001' Gravity='0.0 -9.81 0.0' Debug='1'>
+<Simulation Name='Test' Type='Laparoscopy' UseHaptic='0' Verbose='1' RenderRate='0.020' SimulationRate='0.01' HapticRate='0.001' Gravity='0.0 -9.81 0.0' DataPath='' Debug='1'>
   <Haptic Name='IHP' Type='vtkIHP' NumberOfTools='2'>
   </Haptic>
   <Scenario Name='TestScenario'>
